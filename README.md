@@ -95,7 +95,6 @@ Kết luận này chỉ áp dụng cho prototype và các perturbation được 
 
 ### 4. Visualization
 
-Nếu các hình kết quả được phép chia sẻ và đã được thêm vào repository:
 
 ![Spatial verification results](results/spatial_verification.png)
 
@@ -142,15 +141,18 @@ Robustness Analysis
 Hệ thống sử dụng segmentation mask có sẵn, chưa thực hiện segmentation tự động từ CT gốc.
 
 ### Feature Extraction
-
 Thể tích vùng được đánh dấu được tính bằng:
-
-\[
+$$
 V_{\mathrm{cm}^3} =
-\frac{N_{\mathrm{voxels}}\times V_{\mathrm{voxel,mm}^3}}{1000}
-\]
+\frac{N_{\mathrm{voxels}} \times V_{\mathrm{voxel,mm}^3}}{1000}
+$$
 
-Trong đó thể tích voxel được tính dựa trên NIfTI affine.
+Trong đó:
+- $N_{\mathrm{voxels}}$: Số voxel được đánh dấu trong mask.
+- $V_{\mathrm{voxel,mm}^3}$: Thể tích của mỗi voxel (mm³).
+- $V_{\mathrm{cm}^3}$: Tổng thể tích vùng được đánh dấu (cm³).
+
+Thể tích mỗi voxel được tính dựa trên NIfTI affine.
 
 ### Structured Report Generation
 
@@ -193,7 +195,7 @@ Dataset: [AbdomenAtlas 3.0 Mini](https://huggingface.co/datasets/AbdomenAtlas/Ab
 
 Archive được sử dụng:
 
-`AbdomenAtlas3_masks_BDMAP_BDMAP_00000465_BDMAP_00000696.tar.gz`
+`AbdomenAtlas3_masks_BDMAP_BDMAP_00000001_BDMAP_00000232.tar.tar.gz`
 
 Có thể tải bằng:
 
@@ -363,4 +365,4 @@ Hugging Face Datasets. Dataset được giới thiệu trong nghiên cứu RadGP
 
 ---
 
-**Disclaimer:** Đây là prototype phục vụ học tập và nghiên cứu, không phải hệ thống hỗ trợ chẩn đoán đã được xác nhận để sử dụng lâm sàng.
+**Disclaimer:** Đây là prototype phục vụ học tập và nghiên cứu.
