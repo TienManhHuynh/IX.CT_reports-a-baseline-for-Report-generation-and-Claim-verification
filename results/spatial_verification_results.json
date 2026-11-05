@@ -1,0 +1,38 @@
+{
+  "case_id": "BDMAP_00000466",
+  "reference": "original annotation mask",
+  "thresholds": {
+    "volume_tolerance_cm3": 0.01,
+    "dice_min": 0.5,
+    "centroid_distance_max_mm": 10.0
+  },
+  "results": [
+    {
+      "condition": "Original",
+      "volume_cm3": 14.566,
+      "volume_status": "PASS",
+      "dice": 1.0,
+      "centroid_distance_mm": 0.0,
+      "spatial_status": "PASS",
+      "combined_status": "PASS"
+    },
+    {
+      "condition": "Incomplete 50%",
+      "volume_cm3": 7.285,
+      "volume_status": "FAIL",
+      "dice": 0.6668,
+      "centroid_distance_mm": 5.791,
+      "spatial_status": "PASS",
+      "combined_status": "FAIL"
+    },
+    {
+      "condition": "Shifted 20 voxels",
+      "volume_cm3": 14.566,
+      "volume_status": "PASS",
+      "dice": 0.2357,
+      "centroid_distance_mm": 15.625,
+      "spatial_status": "FAIL",
+      "combined_status": "FAIL"
+    }
+  ]
+}

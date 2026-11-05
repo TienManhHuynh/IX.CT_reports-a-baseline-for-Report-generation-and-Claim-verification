@@ -1,0 +1,27 @@
+
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Dataset - do not commit medical imaging data
+/data/
+
+# Large medical imaging files
+*.nii
+*.nii.gz
+*.tar.gz
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db

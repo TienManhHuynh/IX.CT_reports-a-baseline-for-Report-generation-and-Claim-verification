@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "Original",
+    "volume_cm3": 14.566,
+    "volume_verification": "SUPPORTED_BY_MASK",
+    "dice_vs_original": 1.0
+  },
+  {
+    "condition": "Incomplete 50%",
+    "volume_cm3": 7.285,
+    "volume_verification": "INCONSISTENT_WITH_MASK",
+    "dice_vs_original": 0.6668
+  },
+  {
+    "condition": "Shifted 20 voxels",
+    "volume_cm3": 14.566,
+    "volume_verification": "SUPPORTED_BY_MASK",
+    "dice_vs_original": 0.2357
+  }
+]

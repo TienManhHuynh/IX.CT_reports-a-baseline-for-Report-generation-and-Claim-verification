@@ -1,0 +1,8 @@
+{
+  "case_id": "BDMAP_00000466",
+  "original_volume_cm3": 14.566,
+  "incomplete_volume_cm3": 7.285,
+  "correct_claim_result": "SUPPORTED_BY_MASK",
+  "wrong_claim_result": "INCONSISTENT_WITH_MASK",
+  "incomplete_mask_result": "INCONSISTENT_WITH_MASK"
+}

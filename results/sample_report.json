@@ -1,0 +1,25 @@
+{
+  "case_id": "BDMAP_00000466",
+  "features": {
+    "organ": "liver",
+    "annotated_lesion": true,
+    "voxel_count": 4773,
+    "volume_cm3": 14.566
+  },
+  "structured_report": "Liver lesion annotation is present. Total segmented lesion volume: 14.566 cm3.",
+  "evidence": {
+    "mask_path": "data/sample/BDMAP_00000466/segmentations/liver_lesion.nii.gz",
+    "bbox_min": [
+      360,
+      242,
+      7
+    ],
+    "bbox_max": [
+      396,
+      286,
+      12
+    ],
+    "slice_axis": 2,
+    "slice_index": 11
+  }
+}
