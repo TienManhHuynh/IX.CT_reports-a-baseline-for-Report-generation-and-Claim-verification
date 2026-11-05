@@ -142,10 +142,10 @@ Hệ thống sử dụng segmentation mask có sẵn, chưa thực hiện segmen
 
 ### Feature Extraction
 Thể tích vùng được đánh dấu được tính bằng:
-$$
-V_{\mathrm{cm}^3} =
-\frac{N_{\mathrm{voxels}} \times V_{\mathrm{voxel,mm}^3}}{1000}
-$$
+
+```math
+V_{\mathrm{cm}^3} = \frac{N_{\mathrm{voxels}} \times V_{\mathrm{voxel,mm}^3}}{1000}
+```
 
 Trong đó:
 - $N_{\mathrm{voxels}}$: Số voxel được đánh dấu trong mask.
